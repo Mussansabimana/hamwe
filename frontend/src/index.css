@@ -1,0 +1,71 @@
+/* Custom scrollbar for chat and textarea */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4a4e69;
+  border-radius: 8px;
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4a4e69 #22223b;
+}
+
+/* Cursor for textarea */
+textarea, input, button {
+  caret-color: #7c3aed;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+/* In your CSS file (e.g., index.css) */
+.shadow-neumorphic-dark {
+  box-shadow: 8px 8px 16px #1a1a1a, -8px -8px 16px #4a4a4a;
+}
+.shadow-neumorphic-inset-dark {
+  box-shadow: inset 5px 5px 10px #1a1a1a, inset -5px -5px 10px #4a4a4a;
+}
+.shadow-neumorphic-btn {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4), -5px -5px 10px rgba(255,255,255,0.1);
+}
+.shadow-neumorphic-btn-icon {
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.3), -3px -3px 6px rgba(255,255,255,0.08);
+}
+.shadow-active-dot {
+    box-shadow: 0 0 8px 2px rgba(74, 222, 128, 0.6); /* Tailwind green-400 with blur */
+}
+.custom-scrollbar-neumorphic::-webkit-scrollbar {
+    width: 8px;
+}
+.custom-scrollbar-neumorphic::-webkit-scrollbar-track {
+    background: #2a2a2a; /* Darker track */
+    border-radius: 10px;
+}
+.custom-scrollbar-neumorphic::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #4a4a4a, #6a6a6a); /* Gradient thumb */
+    border-radius: 10px;
+    border: 2px solid #2a2a2a; /* Border to create a "pressed" look */
+}
+.custom-scrollbar-neumorphic::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #5a5a5a, #7a7a7a);
+}
