@@ -1193,7 +1193,7 @@ video {
 }
 
 .bg-sunny {
-  background-image: url('./src/assets/2.jpeg');
+  background-image: url('/public/assets/2.jpeg');
 }
 
 .from-\[\#0b0747\] {
